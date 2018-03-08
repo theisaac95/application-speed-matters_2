@@ -6,7 +6,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 require "shoulda-matchers"
-require 'support/factory_girl'
+require 'support/factory_bot'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

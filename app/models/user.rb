@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
 
   def self.by_total_points
     joins(:points).group('users.id').order('SUM(points.value) DESC')
+    order(total_points: :desc)
   end
 
   def total_points
